@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Cá Nhân</title>
+    <!-- Phông chữ hiện đại Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Icon từ Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Hiệu ứng nền động -->
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="profile-card">
+        <!-- Thông tin cá nhân -->
+        <header class="profile-header">
+            <div class="avatar-container">
+                <img src="https://ui-avatars.com/api/?name=User+Name&background=random&size=150" alt="Avatar"
+                    class="avatar" id="profile-img">
+                <div class="status-badge"></div>
+            </div>
+            <h1 class="name">Tuấn Huấn </h1>
+            <p class="bio">Sáng tạo nội dung / Blogger 🚀</p>
+        </header>
+
+        <!-- Nút liên kết MXH -->
+        <section class="social-links">
+            <a href="https://facebook.com/yourlink" class="social-btn facebook" target="_blank"
+                rel="noopener noreferrer">
+                <i class="ph-fill ph-facebook-logo"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://zalo.me/yourphone" class="social-btn zalo" target="_blank" rel="noopener noreferrer">
+                <i class="ph-fill ph-chat-circle-dots"></i>
+                <span>Zalo</span>
+            </a>
+            <a href="https://instagram.com/yourlink" class="social-btn instagram" target="_blank"
+                rel="noopener noreferrer">
+                <i class="ph-fill ph-instagram-logo"></i>
+                <span>Instagram</span>
+            </a>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Phần Donate / QR Code -->
+        <section class="donate-section">
+            <button class="donate-btn" id="donateBtn">
+                <i class="ph-fill ph-coffee"></i>
+                <span>Ủng hộ mình nhé ♡</span>
+            </button>
+
+            <div class="qr-container" id="qrContainer">
+                <div class="qr-card">
+                    <h3>Quét mã QR để Donate</h3>
+                    <p>Cảm ơn bạn rất nhiều! 🥰</p>
+                    <!-- Bạn có thể thay đổi link hình ảnh QR của mình hoặc dùng VietQR -->
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://example.com/donate"
+                        alt="Donate QR Code" class="qr-code">
+                    <div class="bank-info">
+                        <p><strong>Ngân hàng:</strong> VP Bank</p>
+                        <p><strong>STK:</strong> 68682968686</p>
+                        <p><strong>Chủ TK:</strong> PHAM TUAN ANH</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
